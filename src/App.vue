@@ -7,6 +7,7 @@
     <a-tab-pane key="5" tab="题目5"></a-tab-pane>
     <a-tab-pane key="6" tab="题目6"></a-tab-pane>
     <a-tab-pane key="7" tab="题目7"></a-tab-pane>
+    <a-tab-pane key="8" tab="题目8"></a-tab-pane>
   </a-tabs>
   <div class="content">
     <Q1 v-if="tab === '1'"></Q1>
@@ -16,6 +17,7 @@
     <Q5 v-if="tab === '5'"></Q5>
     <Q6 v-if="tab === '6'"></Q6>
     <Q7 v-if="tab === '7'"></Q7>
+    <Q8 v-if="tab === '8'"></Q8>
   </div>
 </template>
 
@@ -28,8 +30,9 @@ import Q4 from './components/Q4.vue'
 import Q5 from './components/Q5.vue'
 import Q6 from './components/Q6.vue'
 import Q7 from './components/Q7.vue'
-
+import Q8 from './components/Q8.vue'
 const tab = ref('1');
 </script>
 
 <style scoped></style>
+  

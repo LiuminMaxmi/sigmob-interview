@@ -13,13 +13,13 @@
 
 <script setup lang="ts">
 import { ref, watch, watchEffect, nextTick } from 'vue';
-
 const count = ref(22);
 const add = () => {
   count.value++
   setTimeout(() => {
     console.log('setTimeout:', count.value)
   })
+
   nextTick(() => {
     console.log('nextTick:', count.value)
   })
@@ -27,9 +27,11 @@ const add = () => {
   count.value++
   console.log('count:', count.value)
 }
+
 watch(count, v => {
   console.log('watch:', v)
 })
+
 watchEffect(() => {
   console.log('watchEffect', count.value)
 })
@@ -45,3 +47,4 @@ watchEffect(() => {
   border: 2px solid #eee;
 }
 </style>
+

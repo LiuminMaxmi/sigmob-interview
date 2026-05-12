@@ -11,36 +11,36 @@
 
 const renderTree = {
   node: 'div',
-  attr: {style: 'display: flex; flex-direction: column;'},
+  attr: { style: 'display: flex; flex-direction: column;' },
   children: [
     {
       node: 'p',
-      attr: {style: '', text: ''},
+      attr: { style: '', text: '' },
       children: [
         {
           node: 'span',
-          attr: {style: 'margin-right: 10px;'},
+          attr: { style: 'margin-right: 10px;' },
           children: [
             {
               node: 'i',
-              attr: {type: 'font-seize: 12px;'},
+              attr: { type: 'font-seize: 12px;' },
             },
           ],
         }, {
           node: 'i',
-          attt: {type: 'font-size: 12px;'},
+          attt: { type: 'font-size: 12px;' },
         }
       ]
     }, {
       node: 'div',
-      attr: {style: ''},
+      attr: { style: '' },
       children: [
         {
           node: 'p',
-          attr: {style: 'padding: 10;', text: 'test'}
+          attr: { style: 'padding: 10;', text: 'test' }
         }, {
           node: 'p',
-          attr: {style: 'margin-right: 10px;'}
+          attr: { style: 'margin-right: 10px;' }
         }
       ]
     }
